@@ -16,11 +16,13 @@ This repository contains the complete migration of a legacy Spark 2.4 ETL script
 ## 📁 Repository Structure
 
 ```
-├── README.md                     # This file
-├── legacy_etl_job.py            # Original Spark 2.4 script
-├── modern_etl_notebook.py       # ✅ Notebook-optimized version (RECOMMENDED)
-├── migration_comparison.md      # Detailed migration analysis
-├── databricks_client.py         # Databricks workspace connection utility
+├── README.md                     # This file - Quick start guide
+├── migration_journey.md          # 🎯 Complete migration journey with all errors & solutions
+├── troubleshooting.md            # 🚨 Common errors and how to fix them
+├── legacy_etl_job.py            # Original Spark 2.4 script (starting point)
+├── modern_etl_notebook.py       # ✅ Final working version (RECOMMENDED)
+├── migration_comparison.md      # Technical comparison and analysis
+├── quick_test.py                # Local testing script
 ├── .env.example                 # Environment configuration template
 └── .gitignore                   # Git ignore rules
 ```
@@ -319,10 +321,32 @@ You've just experienced:
 
 ## 📚 Next Steps
 
-1. **Apply to your data**: Replace the sample data with your actual ETL logic
-2. **Scale testing**: Test with larger datasets to see performance gains
-3. **Production deployment**: Use the patterns in your production pipelines
-4. **Team training**: Share the migration guide with your team
+1. **📖 Read the complete journey**: See [migration_journey.md](migration_journey.md) for the full story of how OpenHands solved each error step-by-step
+2. **Apply to your data**: Replace the sample data with your actual ETL logic
+3. **Scale testing**: Test with larger datasets to see performance gains
+4. **Production deployment**: Use the patterns in your production pipelines
+5. **Team training**: Share the migration guide with your team
+
+## 🔍 **Want to See the Full Migration Process?**
+
+👉 **[Read the Complete Migration Journey](migration_journey.md)** 👈
+
+This document shows:
+- ❌ **All the errors encountered** (serverless issues, session conflicts, datetime failures)
+- ✅ **How OpenHands solved each problem** step-by-step
+- 🧪 **Reproduction steps** so you can experience the same journey
+- 🎯 **Key learnings** and migration checklist for your own projects
+
+## 🚨 **Having Issues? Check the Troubleshooting Guide**
+
+👉 **[Troubleshooting Common Migration Errors](troubleshooting.md)** 👈
+
+Quick fixes for:
+- Serverless compute compatibility issues
+- Session conflicts in Databricks notebooks  
+- DateTime parsing failures
+- Python UDF performance problems
+- Import and dependency issues
 
 ---
 
