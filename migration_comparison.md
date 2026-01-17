@@ -6,7 +6,7 @@
 - **File**: `modern_etl_notebook.py`
 - **Status**: Successfully tested on Databricks serverless compute
 - **Usage**: `%run /Workspace/Users/your-email/modern_etl_notebook` then `run_etl()`
-- **Performance**: 10-100x improvement over legacy Python UDF
+- **Performance**: Significant improvement over legacy Python UDF
 
 ## Legacy Code Issues Identified
 
@@ -35,7 +35,7 @@ df_cleaned = df.withColumn(
 ```
 
 **Benefits:**
-- 10-100x performance improvement by staying in JVM
+- Significant performance improvement by staying in JVM
 - No serialization overhead between Python and JVM
 - Better optimization by Catalyst optimizer
 
@@ -69,9 +69,9 @@ df_with_timestamp = df.withColumn(
 
 | Aspect | Legacy (Spark 2.4) | Modern (Spark 3.5) | Improvement |
 |--------|-------------------|-------------------|-------------|
-| UDF Performance | Python UDF | Built-in functions | 10-100x faster |
+| UDF Performance | Python UDF | Built-in functions | Much faster |
 | Query Optimization | Manual tuning | Adaptive Query Execution | Automatic optimization |
-| Data Exchange | Row-based | Arrow columnar | 2-5x faster |
+| Data Exchange | Row-based | Arrow columnar | Faster |
 | Schema Handling | Runtime inference | Compile-time definition | Faster startup |
 | Error Handling | Basic | Comprehensive logging | Better debugging |
 

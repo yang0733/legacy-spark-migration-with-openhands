@@ -3,7 +3,7 @@ Modern ETL Job - Databricks Notebook Version
 Optimized for Databricks notebook environment where 'spark' is pre-available
 
 ✅ Successfully tested on Databricks serverless compute
-🚀 Achieves 10-100x performance improvement over legacy version
+🚀 Achieves significant performance improvement over legacy version
 """
 
 from pyspark.sql.functions import (
