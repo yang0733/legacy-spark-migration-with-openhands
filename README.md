@@ -84,8 +84,8 @@ If you don't have a Databricks account:
 ### **Step 3: Clone This Repository** (30 seconds)
 
 ```bash
-git clone https://github.com/yang0733/databricks-legacy-spark-migration.git
-cd databricks-legacy-spark-migration
+git clone https://github.com/yang0733/legacy-spark-migration-with-openhands.git
+cd legacy-spark-migration-with-openhands
 ```
 
 ### **Step 4: Configure Environment** (30 seconds)
